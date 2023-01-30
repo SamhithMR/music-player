@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a68887de5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="player">
+        <div class="wrapper">
+            <div class="track-art">
+                <div class="imgWrapper"></div>
+            </div>
+            <div class="artist">
+                <p class="track-name">tranck-name</p>
+                <p class="track-artist">track-artist</p>
+            </div>
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" class="seek_slider" min="0" max="100" value="0">
+                <div class="total-duration">00:00</div>
+            </div>
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" class="volume_slider" min="0" max="100" value="20">
+                <i class="fa fa-volume-up"></i>
+            </div>
+            <div class="buttons">
+                <i class="fa fa-random fa-2x" onclick="randomCheck()"></i>
+                <i class="fa fa-step-backward fa-2x" onclick="back()"></i>
+                <i class="fa fa-play fa-3x"></i>
+                <i class="fa fa-step-forward fa-2x" onclick="next()"></i>
+                <i class="fa fa-repeat fa-2x" onclick="repeatAudio()"></i>
+            </div>
+            <div class="visualizer">
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
